@@ -1,0 +1,255 @@
+* {
+    font-family: Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+    color: #ffffff;
+    box-sizing: border-box;
+}
+
+header {
+    background: url(../img/delete.jpg) no-repeat center top / cover;
+    height: 100vh;
+}
+
+.heading {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    margin-top: 41px;
+    width: 27px;
+    height: 27px;
+    margin-left: 50px;
+}
+
+.logo:hover {
+    margin-top: 38px;
+    width: 30px;
+    height: 30px;
+    margin-left: 47px;
+    cursor: pointer;
+    transition-delay: 0.1s;
+}
+
+nav {
+    margin-top: 50px;
+}
+
+.menu-all {
+    display: inline-flex;
+    flex-direction: row-reverse;
+}
+
+.topmenu {
+    margin-top: 41px;
+    margin-right: 50px;
+    height: 30px;
+    width: 40px;
+    cursor: pointer;
+}
+
+.menu {
+    padding: 0;
+    margin: 0;
+    display: none;
+}
+
+.menu li {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 41px;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.menu-all:hover .menu {
+    display: block;
+    animation: menu 1s 1;
+}
+
+.menu a:hover {
+    color: #E91E63;
+}
+
+.titles_2 {
+    font-size: 35px;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 6px;
+    animation: text 3s 1;
+}
+
+h1 {
+    font-size: 120px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 300px;
+    letter-spacing: 12px;
+    margin-bottom: 25px;
+    position: relative;
+    animation: text 3s 1;
+}
+
+@media screen and (max-width: 930px) {
+    h1 {
+        font-size: 80px;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    h1 {
+        font-size: 50px;
+    }
+
+    .titles_2 {
+        font-size: 25px;
+    }
+
+}
+
+@keyframes text {
+    0% {
+        opacity: 0;
+        color: #9E9E9E;
+        -webkit-transform: translateY(-80px);
+        transform: translateY(-80px);
+    }
+}
+
+
+@keyframes menu {
+    0% {
+        color: #3498db;
+        opacity: 0;
+    }
+
+    30% {
+        letter-spacing: 7px;
+    }
+
+}
+
+.flex {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.flex div {
+    text-transform: uppercase;
+    border-radius: 5px;
+    padding: 300px 100px;
+    font-size: 42px;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.9);
+    box-sizing: border-box;
+
+}
+
+.flex div:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+    transition-delay: 0.2s;
+    color: #E91E63;
+}
+
+.colons {
+    margin-bottom: 70px;
+    margin-top: 70px;
+}
+
+.video {
+    background: url(../img/1.jpg) no-repeat center top / cover;
+}
+
+.chat {
+    background: url(../img/2.png) no-repeat center top / cover;
+}
+
+.news {
+    background: url(../img/3.jpg) no-repeat center top / cover;
+}
+
+.title_fegure {
+    padding-top: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+.title_fegure h2 {
+    font-size: 48px;
+    letter-spacing: 4px;
+}
+
+.title_fegure p {
+    font-size: 18px;
+    letter-spacing: 2px;
+    margin-top: 10px;
+}
+
+#all_fegure {
+    background: #3F51B5;
+}
+
+.block_fegure {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.block_f {
+    color: #ffffff;
+    padding: 30px;
+    margin-left: 30px;
+    background: linear-gradient(45deg, #5200E0 , #AB00FF );
+    height: 530px;
+    min-width: 400px;
+    margin: 50px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.7) 0 0 5px;
+}
+
+.block_f:hover {
+    background: linear-gradient(45deg,#AB00FF, #5200E0 );
+    box-shadow: rgba(0, 0, 0, 0.7) 0 0 10px;
+}
+
+.figure_content_text {
+    font-size: 21px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 5px;
+    margin-bottom: 6px;
+}
+
+.figure_content_text p {
+    margin: 6px 0;
+    font-size: 18px;
+}
+
+.figure_content img {
+    width: 300px;
+    height: 400px;
+}
+
+.block_f a {
+    text-decoration: none;
+}
+
+footer {
+    padding: 40px 0;
+    text-align: center;
+    background: #0f0f0f;
+    letter-spacing: 2px;
+    border-top: #9C27B0 solid 3px;
+}
